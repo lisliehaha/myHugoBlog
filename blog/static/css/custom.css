@@ -1,0 +1,181 @@
+/* ===============================custom.css ================================== */
+/* 设置菜单栏icon偏移位置 */
+.menu-item-link .iconfont::before {
+    padding-right: 3px;
+}
+
+/* 设置title字体大小 */
+.header .logo-wrapper .logo {
+    position: relative;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+/* 设置文章目录单行省略 */
+.toc-link {
+	display: inline-block;
+	width: 100%;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* 设置文章目录的ul样式telugu */
+.post .post-toc .post-toc-content ul {
+    list-style: hangul-consonant;
+}
+
+/* 设置文章标题hover样式 */
+.post .post-header .post-link:hover {
+    background-color: #E0FFFF;
+	padding: 0 10px;
+	border-radius: 6px;
+}
+
+/* 设置文章代码左侧的水平滚动条 */
+.post .post-content .highlight>.chroma .lntd:first-child pre {
+    overflow: hidden;
+}
+
+/* 设置文章目录字体大小 */
+.post .post-toc .post-toc-content {
+    font-size: 14px;
+}
+.post .post-header {
+    margin-bottom: 4px;
+}
+
+
+/* 去除顶部border */
+body {
+    border-top: 0;
+}
+
+/* 让阅读更多居中 */
+.read-more {
+    text-align: left;
+    padding: 0 0 5px;
+    display: inline;
+}
+.post .post-content .post-summary {
+    margin-bottom: 0.1em;
+}
+.post .post-content .read-more .read-more-link {
+    color: #A9A9A9;
+    font-size: 1.0em;
+    font-family: Athelas,STHeiti,Microsoft Yahei,serif;
+}
+
+/* 设置文章盒子阴影 */
+.post {
+    padding: 1em 1em;
+    margin: 1.0em 0;
+    box-shadow: 0 0 5px rgba(202,203,203,.5);
+    -webkit-box-shadow: 0 0 5px rgba(202,203,203,.5);
+}
+
+/* 调整返回顶部icon位置和大小 */
+.back-to-top {
+    right: 30px;
+    bottom: 45px;
+    font-size: 2em;
+}
+
+/* 设置菜单项的标签、分类页面样式 */
+.terms .terms-tags .terms-link {
+    margin: 5px 5px;
+    border-radius: 30em;
+    padding: 1px 10px;
+    background-color: #D3D3D3;
+}
+
+/* 设置菜单项的标签、分类页面的统计数字样式 */
+.terms .terms-tags .terms-link .terms-count {
+    top: -2px;
+    right: -2px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #4B0082;
+    color: #fff;
+    font-size: 10px;
+}
+
+.footer .copyright .hexo-link, .footer .copyright .theme-link {
+    color: #34495e;
+}
+
+/* 设置社交图标 */
+.footer .social-links .iconfont+.iconfont {
+    margin-left: 3px;
+}
+
+/* 设置底部heart跳动样式动画 */
+.footer .copyright .copyright-year .heart {
+    color: #ff7171;
+    display: inline-block;
+    animation: heartAnimate 1.01s ease-in-out infinite;
+}
+
+
+@keyframes heartAnimate {
+    0%, 100% {
+    transform: scale(1);
+    }
+
+    10%, 30% {
+        transform: scale(.9);
+    }
+    20%, 40%, 60%, 80% {
+        transform: scale(1.1);
+    }
+    50%, 70% {
+        transform: scale(1.1);
+    }
+}
+
+/* 加入animate css 动画 */
+.animate {
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  display: block;
+}
+
+/* 加入旋转动画 */
+@-webkit-keyframes reverseOut{
+from {-webkit-transform: rotate(0deg);}
+to {-webkit-transform: rotate(-360deg);}
+}
+
+.reverseOut{
+-webkit-transform: rotate(-360deg);
+animation: reverseOut 3s linear infinite;
+-moz-animation: reverseOut 3s linear infinite;
+-webkit-animation: reverseOut 3s linear infinite;
+-o-animation: reverseOut 3s linear infinite;
+}
+
+.iconWrap {
+	display: inline-block;
+	margin-left: 40px;
+    margin-top: 16px;
+}
+
+.iconOut {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: url(/img/iconOut.png) no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconIn {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: url(/img/iconIn.png) no-repeat center center/cover;
+}
